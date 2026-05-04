@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI';
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  transition: 0.3s;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: #444;
+}
+
+/* Buttons */
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Notes container */
+#notesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Note card */
+.noteBox {
+  position: relative;
+  margin: 10px;
+}
+
+/* Note textarea */
+.note {
+  width: 320px;
+  height: 250px;
+  border-radius: 20px;
+  border: none;
+  padding: 15px;
+  outline: none;
+  resize: none;
+  font-size: 16px;
+
+  /* Glass effect */
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.6);
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Cute colors (random) */
+.note:nth-child(1) { background: #ffd6e0; }
+.note:nth-child(2) { background: #d6f0ff; }
+.note:nth-child(3) { background: #fff5ba; }
+.note:nth-child(4) { background: #d6ffd6; }
+
+/* Delete button */
+.deleteBtn {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  background: #ff6b6b;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+/* 🌙 Soft Dark Mode (aesthetic) */
+.dark {
+  background: linear-gradient(135deg, #2b2b2b, #3d3d3d);
+}
+
+.dark .note {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+}
+
+.dark .header {
+  color: #eee;
+}
